@@ -1,0 +1,19 @@
+{
+  "name": "mod-starter",
+  "version": "1.0.0",
+  "description": "This is a mod template project. It contains the minimum amount of code necessary to run a working mod.",
+  "scripts": {
+    "start": "npm ci && npm run server",
+    "server": "mods-dev-server src"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@tibco/spotfire-mods-dev-server": "^1.0.1"
+  },
+  "main": "prettier.config.js",
+  "dependencies": {
+    "@types/jquery": "^3.5.14"
+  }
+}
