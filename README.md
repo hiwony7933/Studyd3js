@@ -18,3 +18,11 @@ These instructions assume that you have [Node.js](https://nodejs.org/en/) (which
 
 
 http://bl.ocks.org/WilliamQLiu/76ae20060e19bf42d774
+
+https://www.tutorialsteacher.com/d3js
+
+https://www.tutorialspoint.com/d3js/index.htm
+
+https://observablehq.com/@d3/gallery
+
+https://api.jquery.com/jQuery.getJSON/#jQuery-getJSON-url-data-success
