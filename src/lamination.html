@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>LamiLocDefect Chart</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" type="text/css" media="all" href="lamination.css" />
+    </head>
+    <body>
+        <div id="mod-container">
+            <div class="left-area">
+                <div id="chart-area">
+                    <div class="left-side">
+                        <div id="show-sub-svg1" class="show-sub-svg"></div>
+                        <div id="show-sub-svg3" class="show-sub-svg"></div>
+                    </div>
+
+                    <div class="center" id="show-svg">
+
+                    </div>
+
+                    <div class="right-side">
+                        <div id="show-sub-svg2" class="show-sub-svg"></div>
+                        <div id="show-sub-svg4" class="show-sub-svg"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-area">
+                <label id="fromto"></label>
+                <p>LOT ID : <label id="lotId"></label>&nbsp;&nbsp;&nbsp;Cell ID : <label id="cellId"></label>&nbsp;&nbsp;&nbsp;DATE : <label id="ispDtm"></label></p>
+
+                <div>
+                    <div id="slider-button-area">
+                        <div type="button" id="start" class="button gg-play-button-r" onclick="startSlider()">
+                            <i class=""></i>
+                        </div>
+                        <div type="button" id="stop" class="button gg-stop-button-r" onclick="stopSlider()">
+                            <i class=""></i>
+                        </div>
+                        <div type="button" id="pause" class="button gg-pause-button-r" onclick="pauseSlider()">
+                            <i class=""></i>
+                        </div>
+                        <div type="button" class="button-text" onclick="speed1()">
+                            X1
+                        </div>
+                        <div type="button" class="button-text" onclick="speed2()">
+                            X2
+                        </div>
+                        <div type="button" class="button-text" onclick="speed5()">
+                            X5
+                        </div>
+                    </div>
+
+                    <div id="view-select-area">
+                        <label><input type="checkbox" name="color" value="edge" onclick="checkImgBox('edge')" checked />Edge</label>
+                        <label><input type="checkbox" name="color" value="sky" onclick="checkImgBox('sky')" checked />SM</label>
+                        <label><input type="checkbox" name="color" value="gold" onclick="checkImgBox('gold')" checked />TA</label>
+                        <label><input type="checkbox" name="color" value="silver" onclick="checkImgBox('silver')" checked />TC</label>
+                        <label><input type="checkbox" name="color" value="gray" onclick="checkImgBox('gray')" checked />AC</label>
+                        <label><input type="checkbox" name="color" value="black" onclick="checkImgBox('black')" checked />CS</label>
+                    </div>
+                </div>
+
+                <table id="chart-thumb">
+                    <tr>
+                        <td class="thumbnail" id="before2" onclick="clickThumbnail(-2)"></td>
+                        <td class="thumbnail" id="before1" onclick="clickThumbnail(-1)"></td>
+                        <td class="thumbnail" id="now" onclick="clickThumbnail(0)"></td>
+                        <td class="thumbnail" id="after1" onclick="clickThumbnail(+1)"></td>
+                        <td class="thumbnail" id="after2" onclick="clickThumbnail(+2)"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="Common/jquery-3.6.0.min.js"></script> <!--.Common.jquery-1.11.1.min.js-->
+        <script type="text/javascript" src="Common/d3.min.v7.js"></script>
+        <script type="text/javascript" src="lamination.js"></script>
+    </body>
+</html>

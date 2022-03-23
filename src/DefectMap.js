@@ -1,1053 +1,1203 @@
-const data = [
-  {
-      Sepal_Length: 5.1,
-      Sepal_Width: 3.5,
-      Petal_Length: 1.4,
-      Petal_Width: 0.2,
-      Species: "setosa"
-  },
-  {
-      Sepal_Length: 4.9,
-      Sepal_Width: 3.0,
-      Petal_Length: 1.4,
-      Petal_Width: 0.2,
-      Species: "setosa"
-  },
-  {
-      Sepal_Length: 4.7,
-      Sepal_Width: 3.2,
-      Petal_Length: 1.3,
-      Petal_Width: 0.2,
-      Species: "setosa"
-  },
-  {
-      Sepal_Length: 4.6,
-      Sepal_Width: 3.1,
-      Petal_Length: 1.5,
-      Petal_Width: 0.2,
-      Species: "setosa"
-  },
-  {
-      Sepal_Length: 5.0,
-      Sepal_Width: 3.6,
-      Petal_Length: 1.4,
-      Petal_Width: 0.2,
-      Species: "setosa"
-  },
-  {
-      Sepal_Length: 5.4,
-      Sepal_Width: 3.9,
-      Petal_Length: 1.7,
-      Petal_Width: 0.4,
-      Species: "setosa"
-  },
-  {
-      Sepal_Length: 4.6,
-      Sepal_Width: 3.4,
-      Petal_Length: 1.4,
-      Petal_Width: 0.3,
-      Species: "setosa"
-  },
-  {
-      Sepal_Length: 5.0,
-      Sepal_Width: 3.4,
-      Petal_Length: 1.5,
-      Petal_Width: 0.2,
-      Species: "setosa"
-  },
-  {
-      Sepal_Length: 4.4,
-      Sepal_Width: 2.9,
-      Petal_Length: 1.4,
-      Petal_Width: 0.2,
-      Species: "setosa"
-  },
-  {
-      Sepal_Length: 4.9,
-      Sepal_Width: 3.1,
-      Petal_Length: 1.5,
-      Petal_Width: 0.1,
-      Species: "setosa"
-  },
-  {
-      Sepal_Length: 5.4,
-      Sepal_Width: 3.7,
-      Petal_Length: 1.5,
-      Petal_Width: 0.2,
-      Species: "setosa"
-  },
-  {
-      Sepal_Length: 4.8,
-      Sepal_Width: 3.4,
-      Petal_Length: 1.6,
-      Petal_Width: 0.2,
-      Species: "setosa"
-  },
-  {
-      Sepal_Length: 4.8,
-      Sepal_Width: 3.0,
-      Petal_Length: 1.4,
-      Petal_Width: 0.1,
-      Species: "setosa"
+var data = [
+  {
+      defect_x: 5.1,
+      defect_y: 3.5,
+      line_num: 1,
+      stage_num: 0,
+      defect_image_url: "./",
+      category: "setosa"
   },
-  {
-      Sepal_Length: 4.3,
-      Sepal_Width: 3.0,
-      Petal_Length: 1.1,
-      Petal_Width: 0.1,
-      Species: "setosa"
+  {
+      defect_x: 4.9,
+      defect_y: 3.0,
+      line_num: 1,
+      stage_num: 0,
+      defect_image_url: "./",
+      category: "setosa"
   },
-  {
-      Sepal_Length: 5.8,
-      Sepal_Width: 4.0,
-      Petal_Length: 1.2,
-      Petal_Width: 0.2,
-      Species: "setosa"
+  {
+      defect_x: 4.7,
+      defect_y: 3.2,
+      line_num: 1,
+      stage_num: 0,
+      defect_image_url: "./",
+      category: "setosa"
   },
-  {
-      Sepal_Length: 5.7,
-      Sepal_Width: 4.4,
-      Petal_Length: 1.5,
-      Petal_Width: 0.4,
-      Species: "setosa"
+  {
+      defect_x: 4.6,
+      defect_y: 3.1,
+      line_num: 1,
+      stage_num: 0,
+      defect_image_url: "./",
+      category: "setosa"
   },
-  {
-      Sepal_Length: 5.4,
-      Sepal_Width: 3.9,
-      Petal_Length: 1.3,
-      Petal_Width: 0.4,
-      Species: "setosa"
+  {
+      defect_x: 5.0,
+      defect_y: 4.2,
+      line_num: 1,
+      stage_num: 0,
+      defect_image_url: "./",
+      category: "setosa"
   },
-  {
-      Sepal_Length: 5.1,
-      Sepal_Width: 3.5,
-      Petal_Length: 1.4,
-      Petal_Width: 0.3,
-      Species: "setosa"
+  {
+      defect_x: 5.4,
+      defect_y: 3.9,
+      line_num: 1,
+      stage_num: 0,
+      defect_image_url: "./",
+      category: "setosa"
   },
-  {
-      Sepal_Length: 5.7,
-      Sepal_Width: 3.8,
-      Petal_Length: 1.7,
-      Petal_Width: 0.3,
-      Species: "setosa"
+  {
+      defect_x: 4.6,
+      defect_y: 3.4,
+      line_num: 1,
+      stage_num: 0,
+      defect_image_url: "./",
+      category: "setosa"
   },
-  {
-      Sepal_Length: 5.1,
-      Sepal_Width: 3.8,
-      Petal_Length: 1.5,
-      Petal_Width: 0.3,
-      Species: "setosa"
+  {
+      defect_x: 5.0,
+      defect_y: 3.4,
+      line_num: 1,
+      stage_num: 0,
+      defect_image_url: "./",
+      category: "setosa"
   },
-  {
-      Sepal_Length: 5.4,
-      Sepal_Width: 3.4,
-      Petal_Length: 1.7,
-      Petal_Width: 0.2,
-      Species: "setosa"
+  {
+      defect_x: 4.4,
+      defect_y: 2.9,
+      line_num: 1,
+      stage_num: 0,
+      defect_image_url: "./",
+      category: "setosa"
   },
-  {
-      Sepal_Length: 5.1,
-      Sepal_Width: 3.7,
-      Petal_Length: 1.5,
-      Petal_Width: 0.4,
-      Species: "setosa"
+  {
+      defect_x: 4.9,
+      defect_y: 3.1,
+      line_num: 1,
+      stage_num: 0,
+      defect_image_url: "./",
+      category: "setosa"
   },
-  {
-      Sepal_Length: 4.6,
-      Sepal_Width: 3.6,
-      Petal_Length: 1.0,
-      Petal_Width: 0.2,
-      Species: "setosa"
+  {
+      defect_x: 5.4,
+      defect_y: 3.7,
+      line_num: 1,
+      stage_num: 0,
+      defect_image_url: "./",
+      category: "setosa"
   },
-  {
-      Sepal_Length: 5.1,
-      Sepal_Width: 3.3,
-      Petal_Length: 1.7,
-      Petal_Width: 0.5,
-      Species: "setosa"
+  {
+      defect_x: 4.8,
+      defect_y: 3.4,
+      line_num: 1,
+      stage_num: 0,
+      defect_image_url: "./",
+      category: "setosa"
   },
-  {
-      Sepal_Length: 4.8,
-      Sepal_Width: 3.4,
-      Petal_Length: 1.9,
-      Petal_Width: 0.2,
-      Species: "setosa"
+  {
+      defect_x: 4.8,
+      defect_y: 3.0,
+      line_num: 1,
+      stage_num: 0,
+      defect_image_url: "./",
+      category: "setosa"
   },
-  {
-      Sepal_Length: 5.0,
-      Sepal_Width: 3.0,
-      Petal_Length: 1.6,
-      Petal_Width: 0.2,
-      Species: "setosa"
+  {
+      defect_x: 4.3,
+      defect_y: 3.0,
+      line_num: 1,
+      stage_num: 0,
+      defect_image_url: "./",
+      category: "setosa"
   },
-  {
-      Sepal_Length: 5.0,
-      Sepal_Width: 3.4,
-      Petal_Length: 1.6,
-      Petal_Width: 0.4,
-      Species: "setosa"
+  {
+      defect_x: 5.8,
+      defect_y: 4.0,
+      line_num: 1,
+      stage_num: 0,
+      defect_image_url: "./",
+      category: "setosa"
   },
-  {
-      Sepal_Length: 5.2,
-      Sepal_Width: 3.5,
-      Petal_Length: 1.5,
-      Petal_Width: 0.2,
-      Species: "setosa"
+  {
+      defect_x: 5.7,
+      defect_y: 4.4,
+      line_num: 1,
+      stage_num: 0,
+      defect_image_url: "./",
+      category: "setosa"
   },
-  {
-      Sepal_Length: 5.2,
-      Sepal_Width: 3.4,
-      Petal_Length: 1.4,
-      Petal_Width: 0.2,
-      Species: "setosa"
+  {
+      defect_x: 5.4,
+      defect_y: 3.9,
+      line_num: 1,
+      stage_num: 0,
+      defect_image_url: "./",
+      category: "setosa"
   },
-  {
-      Sepal_Length: 4.7,
-      Sepal_Width: 3.2,
-      Petal_Length: 1.6,
-      Petal_Width: 0.2,
-      Species: "setosa"
+  {
+      defect_x: 5.1,
+      defect_y: 3.5,
+      line_num: 1,
+      stage_num: 0,
+      defect_image_url: "./",
+      category: "setosa"
   },
-  {
-      Sepal_Length: 4.8,
-      Sepal_Width: 3.1,
-      Petal_Length: 1.6,
-      Petal_Width: 0.2,
-      Species: "setosa"
+  {
+      defect_x: 5.7,
+      defect_y: 3.8,
+      line_num: 1,
+      stage_num: 0,
+      defect_image_url: "./",
+      category: "setosa"
   },
-  {
-      Sepal_Length: 5.4,
-      Sepal_Width: 3.4,
-      Petal_Length: 1.5,
-      Petal_Width: 0.4,
-      Species: "setosa"
+  {
+      defect_x: 5.1,
+      defect_y: 3.8,
+      line_num: 1,
+      stage_num: 0,
+      defect_image_url: "./",
+      category: "setosa"
   },
-  {
-      Sepal_Length: 5.2,
-      Sepal_Width: 4.1,
-      Petal_Length: 1.5,
-      Petal_Width: 0.1,
-      Species: "setosa"
+  {
+      defect_x: 5.4,
+      defect_y: 3.4,
+      line_num: 1,
+      stage_num: 0,
+      defect_image_url: "./",
+      category: "setosa"
   },
-  {
-      Sepal_Length: 5.5,
-      Sepal_Width: 4.2,
-      Petal_Length: 1.4,
-      Petal_Width: 0.2,
-      Species: "setosa"
+  {
+      defect_x: 5.1,
+      defect_y: 3.7,
+      line_num: 1,
+      stage_num: 0,
+      defect_image_url: "./",
+      category: "setosa"
   },
-  {
-      Sepal_Length: 4.9,
-      Sepal_Width: 3.1,
-      Petal_Length: 1.5,
-      Petal_Width: 0.2,
-      Species: "setosa"
+  {
+      defect_x: 4.6,
+      defect_y: 3.6,
+      line_num: 1,
+      stage_num: 0,
+      defect_image_url: "./",
+      category: "setosa"
   },
-  {
-      Sepal_Length: 5.0,
-      Sepal_Width: 3.2,
-      Petal_Length: 1.2,
-      Petal_Width: 0.2,
-      Species: "setosa"
+  {
+      defect_x: 5.1,
+      defect_y: 3.3,
+      line_num: 1,
+      stage_num: 0,
+      defect_image_url: "./",
+      category: "setosa"
   },
-  {
-      Sepal_Length: 5.5,
-      Sepal_Width: 3.5,
-      Petal_Length: 1.3,
-      Petal_Width: 0.2,
-      Species: "setosa"
+  {
+      defect_x: 4.5,
+      defect_y: 3.4,
+      line_num: 1,
+      stage_num: 0,
+      defect_image_url: "./",
+      category: "setosa"
   },
-  {
-      Sepal_Length: 4.9,
-      Sepal_Width: 3.6,
-      Petal_Length: 1.4,
-      Petal_Width: 0.1,
-      Species: "setosa"
+  {
+      defect_x: 5.0,
+      defect_y: 3.0,
+      line_num: 1,
+      stage_num: 0,
+      defect_image_url: "./",
+      category: "setosa"
   },
-  {
-      Sepal_Length: 4.4,
-      Sepal_Width: 3.0,
-      Petal_Length: 1.3,
-      Petal_Width: 0.2,
-      Species: "setosa"
+  {
+      defect_x: 5.0,
+      defect_y: 3.4,
+      line_num: 1,
+      stage_num: 0,
+      defect_image_url: "./",
+      category: "setosa"
   },
-  {
-      Sepal_Length: 5.1,
-      Sepal_Width: 3.4,
-      Petal_Length: 1.5,
-      Petal_Width: 0.2,
-      Species: "setosa"
+  {
+      defect_x: 5.2,
+      defect_y: 3.5,
+      line_num: 1,
+      stage_num: 0,
+      defect_image_url: "./",
+      category: "setosa"
   },
-  {
-      Sepal_Length: 5.0,
-      Sepal_Width: 3.5,
-      Petal_Length: 1.3,
-      Petal_Width: 0.3,
-      Species: "setosa"
+  {
+      defect_x: 5.2,
+      defect_y: 3.4,
+      line_num: 1,
+      stage_num: 0,
+      defect_image_url: "./",
+      category: "setosa"
   },
-  {
-      Sepal_Length: 4.5,
-      Sepal_Width: 2.3,
-      Petal_Length: 1.3,
-      Petal_Width: 0.3,
-      Species: "setosa"
+  {
+      defect_x: 4.7,
+      defect_y: 3.2,
+      line_num: 1,
+      stage_num: 0,
+      defect_image_url: "./",
+      category: "setosa"
   },
-  {
-      Sepal_Length: 4.4,
-      Sepal_Width: 3.2,
-      Petal_Length: 1.3,
-      Petal_Width: 0.2,
-      Species: "setosa"
+  {
+      defect_x: 4.8,
+      defect_y: 3.1,
+      line_num: 1,
+      stage_num: 0,
+      defect_image_url: "./",
+      category: "setosa"
   },
-  {
-      Sepal_Length: 5.0,
-      Sepal_Width: 3.5,
-      Petal_Length: 1.6,
-      Petal_Width: 0.6,
-      Species: "setosa"
+  {
+      defect_x: 5.4,
+      defect_y: 3.4,
+      line_num: 1,
+      stage_num: 0,
+      defect_image_url: "./",
+      category: "setosa"
   },
-  {
-      Sepal_Length: 5.1,
-      Sepal_Width: 3.8,
-      Petal_Length: 1.9,
-      Petal_Width: 0.4,
-      Species: "setosa"
+  {
+      defect_x: 5.2,
+      defect_y: 4.1,
+      line_num: 1,
+      stage_num: 0,
+      defect_image_url: "./",
+      category: "setosa"
   },
-  {
-      Sepal_Length: 4.8,
-      Sepal_Width: 3.0,
-      Petal_Length: 1.4,
-      Petal_Width: 0.3,
-      Species: "setosa"
+  {
+      defect_x: 5.5,
+      defect_y: 4.2,
+      line_num: 1,
+      stage_num: 0,
+      defect_image_url: "./",
+      category: "setosa"
   },
-  {
-      Sepal_Length: 5.1,
-      Sepal_Width: 3.8,
-      Petal_Length: 1.6,
-      Petal_Width: 0.2,
-      Species: "setosa"
+  {
+      defect_x: 4.9,
+      defect_y: 3.1,
+      line_num: 1,
+      stage_num: 0,
+      defect_image_url: "./",
+      category: "setosa"
   },
-  {
-      Sepal_Length: 4.6,
-      Sepal_Width: 3.2,
-      Petal_Length: 1.4,
-      Petal_Width: 0.2,
-      Species: "setosa"
+  {
+      defect_x: 5.0,
+      defect_y: 3.2,
+      line_num: 1,
+      stage_num: 0,
+      defect_image_url: "./",
+      category: "setosa"
   },
-  {
-      Sepal_Length: 5.3,
-      Sepal_Width: 3.7,
-      Petal_Length: 1.5,
-      Petal_Width: 0.2,
-      Species: "setosa"
+  {
+      defect_x: 5.5,
+      defect_y: 3.5,
+      line_num: 1,
+      stage_num: 0,
+      defect_image_url: "./",
+      category: "setosa"
   },
-  {
-      Sepal_Length: 5.0,
-      Sepal_Width: 3.3,
-      Petal_Length: 1.4,
-      Petal_Width: 0.2,
-      Species: "setosa"
+  {
+      defect_x: 4.9,
+      defect_y: 3.6,
+      line_num: 1,
+      stage_num: 0,
+      defect_image_url: "./",
+      category: "setosa"
   },
-  {
-      Sepal_Length: 7.0,
-      Sepal_Width: 3.2,
-      Petal_Length: 4.7,
-      Petal_Width: 1.4,
-      Species: "versicolor"
+  {
+      defect_x: 4.4,
+      defect_y: 3.0,
+      line_num: 1,
+      stage_num: 0,
+      defect_image_url: "./",
+      category: "setosa"
   },
-  {
-      Sepal_Length: 6.4,
-      Sepal_Width: 3.2,
-      Petal_Length: 4.5,
-      Petal_Width: 1.5,
-      Species: "versicolor"
+  {
+      defect_x: 5.1,
+      defect_y: 3.4,
+      line_num: 1,
+      stage_num: 0,
+      defect_image_url: "./",
+      category: "setosa"
   },
-  {
-      Sepal_Length: 6.9,
-      Sepal_Width: 3.1,
-      Petal_Length: 4.9,
-      Petal_Width: 1.5,
-      Species: "versicolor"
+  {
+      defect_x: 5.0,
+      defect_y: 3.5,
+      line_num: 1,
+      stage_num: 0,
+      defect_image_url: "./",
+      category: "setosa"
   },
-  {
-      Sepal_Length: 5.5,
-      Sepal_Width: 2.3,
-      Petal_Length: 4.0,
-      Petal_Width: 1.3,
-      Species: "versicolor"
+  {
+      defect_x: 4.5,
+      defect_y: 2.3,
+      line_num: 1,
+      stage_num: 0,
+      defect_image_url: "./",
+      category: "setosa"
   },
-  {
-      Sepal_Length: 6.5,
-      Sepal_Width: 2.8,
-      Petal_Length: 4.6,
-      Petal_Width: 1.5,
-      Species: "versicolor"
+  {
+      defect_x: 4.4,
+      defect_y: 3.2,
+      line_num: 1,
+      stage_num: 0,
+      defect_image_url: "./",
+      category: "setosa"
   },
-  {
-      Sepal_Length: 5.7,
-      Sepal_Width: 2.8,
-      Petal_Length: 4.5,
-      Petal_Width: 1.3,
-      Species: "versicolor"
+  {
+      defect_x: 5.0,
+      defect_y: 3.5,
+      line_num: 1,
+      stage_num: 0,
+      defect_image_url: "./",
+      category: "setosa"
   },
-  {
-      Sepal_Length: 6.3,
-      Sepal_Width: 3.3,
-      Petal_Length: 4.7,
-      Petal_Width: 1.6,
-      Species: "versicolor"
+  {
+      defect_x: 5.1,
+      defect_y: 3.8,
+      line_num: 1,
+      stage_num: 0,
+      defect_image_url: "./",
+      category: "setosa"
   },
-  {
-      Sepal_Length: 4.9,
-      Sepal_Width: 2.4,
-      Petal_Length: 3.3,
-      Petal_Width: 1.0,
-      Species: "versicolor"
+  {
+      defect_x: 4.8,
+      defect_y: 3.0,
+      line_num: 1,
+      stage_num: 0,
+      defect_image_url: "./",
+      category: "setosa"
   },
-  {
-      Sepal_Length: 6.6,
-      Sepal_Width: 2.9,
-      Petal_Length: 4.6,
-      Petal_Width: 1.3,
-      Species: "versicolor"
+  {
+      defect_x: 5.1,
+      defect_y: 3.8,
+      line_num: 1,
+      stage_num: 0,
+      defect_image_url: "./",
+      category: "setosa"
   },
-  {
-      Sepal_Length: 5.2,
-      Sepal_Width: 2.7,
-      Petal_Length: 3.9,
-      Petal_Width: 1.4,
-      Species: "versicolor"
+  {
+      defect_x: 4.6,
+      defect_y: 3.2,
+      line_num: 1,
+      stage_num: 0,
+      defect_image_url: "./",
+      category: "setosa"
   },
-  {
-      Sepal_Length: 5.0,
-      Sepal_Width: 2.0,
-      Petal_Length: 3.5,
-      Petal_Width: 1.0,
-      Species: "versicolor"
+  {
+      defect_x: 5.3,
+      defect_y: 3.7,
+      line_num: 1,
+      stage_num: 0,
+      defect_image_url: "./",
+      category: "setosa"
   },
-  {
-      Sepal_Length: 5.9,
-      Sepal_Width: 3.0,
-      Petal_Length: 4.2,
-      Petal_Width: 1.5,
-      Species: "versicolor"
+  {
+      defect_x: 5.0,
+      defect_y: 3.3,
+      line_num: 1,
+      stage_num: 0,
+      defect_image_url: "./",
+      category: "setosa"
   },
-  {
-      Sepal_Length: 6.0,
-      Sepal_Width: 2.2,
-      Petal_Length: 4.0,
-      Petal_Width: 1.0,
-      Species: "versicolor"
+  {
+      defect_x: 7.0,
+      defect_y: 3.2,
+      line_num: 4,
+      stage_num: 1,
+      defect_image_url: "./",
+      category: "versicolor"
   },
-  {
-      Sepal_Length: 6.1,
-      Sepal_Width: 2.9,
-      Petal_Length: 4.7,
-      Petal_Width: 1.4,
-      Species: "versicolor"
+  {
+      defect_x: 6.4,
+      defect_y: 3.2,
+      line_num: 4,
+      stage_num: 1,
+      defect_image_url: "./",
+      category: "versicolor"
   },
-  {
-      Sepal_Length: 5.6,
-      Sepal_Width: 2.9,
-      Petal_Length: 3.6,
-      Petal_Width: 1.3,
-      Species: "versicolor"
+  {
+      defect_x: 6.9,
+      defect_y: 3.1,
+      line_num: 4,
+      stage_num: 1,
+      defect_image_url: "./",
+      category: "versicolor"
   },
-  {
-      Sepal_Length: 6.7,
-      Sepal_Width: 3.1,
-      Petal_Length: 4.4,
-      Petal_Width: 1.4,
-      Species: "versicolor"
+  {
+      defect_x: 5.5,
+      defect_y: 2.3,
+      line_num: 4,
+      stage_num: 1,
+      defect_image_url: "./",
+      category: "versicolor"
   },
-  {
-      Sepal_Length: 5.6,
-      Sepal_Width: 3.0,
-      Petal_Length: 4.5,
-      Petal_Width: 1.5,
-      Species: "versicolor"
+  {
+      defect_x: 6.5,
+      defect_y: 2.8,
+      line_num: 4,
+      stage_num: 1,
+      defect_image_url: "./",
+      category: "versicolor"
   },
-  {
-      Sepal_Length: 5.8,
-      Sepal_Width: 2.7,
-      Petal_Length: 4.1,
-      Petal_Width: 1.0,
-      Species: "versicolor"
+  {
+      defect_x: 5.7,
+      defect_y: 2.8,
+      line_num: 4,
+      stage_num: 1,
+      defect_image_url: "./",
+      category: "versicolor"
   },
-  {
-      Sepal_Length: 6.2,
-      Sepal_Width: 2.2,
-      Petal_Length: 4.5,
-      Petal_Width: 1.5,
-      Species: "versicolor"
+  {
+      defect_x: 6.3,
+      defect_y: 3.3,
+      line_num: 4,
+      stage_num: 1,
+      defect_image_url: "./",
+      category: "versicolor"
   },
-  {
-      Sepal_Length: 5.6,
-      Sepal_Width: 2.5,
-      Petal_Length: 3.9,
-      Petal_Width: 1.1,
-      Species: "versicolor"
+  {
+      defect_x: 4.9,
+      defect_y: 2.4,
+      line_num: 3,
+      stage_num: 1,
+      defect_image_url: "./",
+      category: "versicolor"
   },
-  {
-      Sepal_Length: 5.9,
-      Sepal_Width: 3.2,
-      Petal_Length: 4.8,
-      Petal_Width: 1.8,
-      Species: "versicolor"
+  {
+      defect_x: 6.6,
+      defect_y: 2.9,
+      line_num: 4,
+      stage_num: 1,
+      defect_image_url: "./",
+      category: "versicolor"
   },
-  {
-      Sepal_Length: 6.1,
-      Sepal_Width: 2.8,
-      Petal_Length: 4.0,
-      Petal_Width: 1.3,
-      Species: "versicolor"
+  {
+      defect_x: 5.2,
+      defect_y: 2.7,
+      line_num: 3,
+      stage_num: 1,
+      defect_image_url: "./",
+      category: "versicolor"
   },
-  {
-      Sepal_Length: 6.3,
-      Sepal_Width: 2.5,
-      Petal_Length: 4.9,
-      Petal_Width: 1.5,
-      Species: "versicolor"
+  {
+      defect_x: 5.0,
+      defect_y: 2.0,
+      line_num: 3,
+      stage_num: 1,
+      defect_image_url: "./",
+      category: "versicolor"
   },
-  {
-      Sepal_Length: 6.1,
-      Sepal_Width: 2.8,
-      Petal_Length: 4.7,
-      Petal_Width: 1.2,
-      Species: "versicolor"
+  {
+      defect_x: 5.9,
+      defect_y: 3.0,
+      line_num: 4,
+      stage_num: 1,
+      defect_image_url: "./",
+      category: "versicolor"
   },
-  {
-      Sepal_Length: 6.4,
-      Sepal_Width: 2.9,
-      Petal_Length: 4.3,
-      Petal_Width: 1.3,
-      Species: "versicolor"
+  {
+      defect_x: 6.0,
+      defect_y: 2.2,
+      line_num: 4,
+      stage_num: 1,
+      defect_image_url: "./",
+      category: "versicolor"
   },
-  {
-      Sepal_Length: 6.6,
-      Sepal_Width: 3.0,
-      Petal_Length: 4.4,
-      Petal_Width: 1.4,
-      Species: "versicolor"
+  {
+      defect_x: 6.1,
+      defect_y: 2.9,
+      line_num: 4,
+      stage_num: 1,
+      defect_image_url: "./",
+      category: "versicolor"
   },
-  {
-      Sepal_Length: 6.8,
-      Sepal_Width: 2.8,
-      Petal_Length: 4.8,
-      Petal_Width: 1.4,
-      Species: "versicolor"
+  {
+      defect_x: 5.6,
+      defect_y: 2.9,
+      line_num: 3,
+      stage_num: 1,
+      defect_image_url: "./",
+      category: "versicolor"
   },
-  {
-      Sepal_Length: 6.7,
-      Sepal_Width: 3.0,
-      Petal_Length: 5.0,
-      Petal_Width: 1.7,
-      Species: "versicolor"
+  {
+      defect_x: 6.7,
+      defect_y: 3.1,
+      line_num: 4,
+      stage_num: 1,
+      defect_image_url: "./",
+      category: "versicolor"
   },
-  {
-      Sepal_Length: 6.0,
-      Sepal_Width: 2.9,
-      Petal_Length: 4.5,
-      Petal_Width: 1.5,
-      Species: "versicolor"
+  {
+      defect_x: 5.6,
+      defect_y: 3.0,
+      line_num: 4,
+      stage_num: 1,
+      defect_image_url: "./",
+      category: "versicolor"
   },
-  {
-      Sepal_Length: 5.7,
-      Sepal_Width: 2.6,
-      Petal_Length: 3.5,
-      Petal_Width: 1.0,
-      Species: "versicolor"
+  {
+      defect_x: 5.8,
+      defect_y: 2.7,
+      line_num: 4,
+      stage_num: 1,
+      defect_image_url: "./",
+      category: "versicolor"
   },
-  {
-      Sepal_Length: 5.5,
-      Sepal_Width: 2.4,
-      Petal_Length: 3.8,
-      Petal_Width: 1.1,
-      Species: "versicolor"
+  {
+      defect_x: 6.2,
+      defect_y: 2.2,
+      line_num: 4,
+      stage_num: 1,
+      defect_image_url: "./",
+      category: "versicolor"
   },
-  {
-      Sepal_Length: 5.5,
-      Sepal_Width: 2.4,
-      Petal_Length: 3.7,
-      Petal_Width: 1.0,
-      Species: "versicolor"
+  {
+      defect_x: 5.6,
+      defect_y: 2.5,
+      line_num: 3,
+      stage_num: 1,
+      defect_image_url: "./",
+      category: "versicolor"
   },
-  {
-      Sepal_Length: 5.8,
-      Sepal_Width: 2.7,
-      Petal_Length: 3.9,
-      Petal_Width: 1.2,
-      Species: "versicolor"
+  {
+      defect_x: 5.9,
+      defect_y: 3.2,
+      line_num: 4,
+      stage_num: 1,
+      defect_image_url: "./",
+      category: "versicolor"
   },
-  {
-      Sepal_Length: 6.0,
-      Sepal_Width: 2.7,
-      Petal_Length: 5.1,
-      Petal_Width: 1.6,
-      Species: "versicolor"
+  {
+      defect_x: 6.1,
+      defect_y: 2.8,
+      line_num: 4,
+      stage_num: 1,
+      defect_image_url: "./",
+      category: "versicolor"
   },
-  {
-      Sepal_Length: 5.4,
-      Sepal_Width: 3.0,
-      Petal_Length: 4.5,
-      Petal_Width: 1.5,
-      Species: "versicolor"
+  {
+      defect_x: 6.3,
+      defect_y: 2.5,
+      line_num: 4,
+      stage_num: 1,
+      defect_image_url: "./",
+      category: "versicolor"
   },
-  {
-      Sepal_Length: 6.0,
-      Sepal_Width: 3.4,
-      Petal_Length: 4.5,
-      Petal_Width: 1.6,
-      Species: "versicolor"
+  {
+      defect_x: 6.1,
+      defect_y: 2.8,
+      line_num: 4,
+      stage_num: 1,
+      defect_image_url: "./",
+      category: "versicolor"
   },
-  {
-      Sepal_Length: 6.7,
-      Sepal_Width: 3.1,
-      Petal_Length: 4.7,
-      Petal_Width: 1.5,
-      Species: "versicolor"
+  {
+      defect_x: 6.4,
+      defect_y: 2.9,
+      line_num: 4,
+      stage_num: 1,
+      defect_image_url: "./",
+      category: "versicolor"
   },
-  {
-      Sepal_Length: 6.3,
-      Sepal_Width: 2.3,
-      Petal_Length: 4.4,
-      Petal_Width: 1.3,
-      Species: "versicolor"
+  {
+      defect_x: 6.6,
+      defect_y: 3.0,
+      line_num: 4,
+      stage_num: 1,
+      defect_image_url: "./",
+      category: "versicolor"
   },
-  {
-      Sepal_Length: 5.6,
-      Sepal_Width: 3.0,
-      Petal_Length: 4.1,
-      Petal_Width: 1.3,
-      Species: "versicolor"
+  {
+      defect_x: 6.8,
+      defect_y: 2.8,
+      line_num: 4,
+      stage_num: 1,
+      defect_image_url: "./",
+      category: "versicolor"
   },
-  {
-      Sepal_Length: 5.5,
-      Sepal_Width: 2.5,
-      Petal_Length: 4.0,
-      Petal_Width: 1.3,
-      Species: "versicolor"
+  {
+      defect_x: 6.7,
+      defect_y: 3.0,
+      line_num: 5,
+      stage_num: 1,
+      defect_image_url: "./",
+      category: "versicolor"
   },
-  {
-      Sepal_Length: 5.5,
-      Sepal_Width: 2.6,
-      Petal_Length: 4.4,
-      Petal_Width: 1.2,
-      Species: "versicolor"
+  {
+      defect_x: 6.0,
+      defect_y: 2.9,
+      line_num: 4,
+      stage_num: 1,
+      defect_image_url: "./",
+      category: "versicolor"
   },
-  {
-      Sepal_Length: 6.1,
-      Sepal_Width: 3.0,
-      Petal_Length: 4.6,
-      Petal_Width: 1.4,
-      Species: "versicolor"
+  {
+      defect_x: 5.7,
+      defect_y: 2.6,
+      line_num: 3,
+      stage_num: 1,
+      defect_image_url: "./",
+      category: "versicolor"
   },
-  {
-      Sepal_Length: 5.8,
-      Sepal_Width: 2.6,
-      Petal_Length: 4.0,
-      Petal_Width: 1.2,
-      Species: "versicolor"
+  {
+      defect_x: 5.5,
+      defect_y: 2.4,
+      line_num: 3,
+      stage_num: 1,
+      defect_image_url: "./",
+      category: "versicolor"
   },
-  {
-      Sepal_Length: 5.0,
-      Sepal_Width: 2.3,
-      Petal_Length: 3.3,
-      Petal_Width: 1.0,
-      Species: "versicolor"
+  {
+      defect_x: 5.5,
+      defect_y: 2.4,
+      line_num: 3,
+      stage_num: 1,
+      defect_image_url: "./",
+      category: "versicolor"
   },
-  {
-      Sepal_Length: 5.6,
-      Sepal_Width: 2.7,
-      Petal_Length: 4.2,
-      Petal_Width: 1.3,
-      Species: "versicolor"
+  {
+      defect_x: 5.8,
+      defect_y: 2.7,
+      line_num: 3,
+      stage_num: 1,
+      defect_image_url: "./",
+      category: "versicolor"
   },
-  {
-      Sepal_Length: 5.7,
-      Sepal_Width: 3.0,
-      Petal_Length: 4.2,
-      Petal_Width: 1.2,
-      Species: "versicolor"
+  {
+      defect_x: 6.0,
+      defect_y: 2.7,
+      line_num: 5,
+      stage_num: 1,
+      defect_image_url: "./",
+      category: "versicolor"
   },
-  {
-      Sepal_Length: 5.7,
-      Sepal_Width: 2.9,
-      Petal_Length: 4.2,
-      Petal_Width: 1.3,
-      Species: "versicolor"
+  {
+      defect_x: 5.4,
+      defect_y: 3.0,
+      line_num: 4,
+      stage_num: 1,
+      defect_image_url: "./",
+      category: "versicolor"
   },
-  {
-      Sepal_Length: 6.2,
-      Sepal_Width: 2.9,
-      Petal_Length: 4.3,
-      Petal_Width: 1.3,
-      Species: "versicolor"
+  {
+      defect_x: 6.0,
+      defect_y: 3.4,
+      line_num: 4,
+      stage_num: 1,
+      defect_image_url: "./",
+      category: "versicolor"
   },
-  {
-      Sepal_Length: 5.1,
-      Sepal_Width: 2.5,
-      Petal_Length: 3.0,
-      Petal_Width: 1.1,
-      Species: "versicolor"
+  {
+      defect_x: 6.7,
+      defect_y: 3.1,
+      line_num: 4,
+      stage_num: 1,
+      defect_image_url: "./",
+      category: "versicolor"
   },
-  {
-      Sepal_Length: 5.7,
-      Sepal_Width: 2.8,
-      Petal_Length: 4.1,
-      Petal_Width: 1.3,
-      Species: "versicolor"
+  {
+      defect_x: 6.3,
+      defect_y: 2.3,
+      line_num: 4,
+      stage_num: 1,
+      defect_image_url: "./",
+      category: "versicolor"
   },
-  {
-      Sepal_Length: 6.3,
-      Sepal_Width: 3.3,
-      Petal_Length: 6.0,
-      Petal_Width: 2.5,
-      Species: "virginica"
+  {
+      defect_x: 5.6,
+      defect_y: 3.0,
+      line_num: 4,
+      stage_num: 1,
+      defect_image_url: "./",
+      category: "versicolor"
   },
-  {
-      Sepal_Length: 5.8,
-      Sepal_Width: 2.7,
-      Petal_Length: 5.1,
-      Petal_Width: 1.9,
-      Species: "virginica"
+  {
+      defect_x: 5.5,
+      defect_y: 2.5,
+      line_num: 4,
+      stage_num: 1,
+      defect_image_url: "./",
+      category: "versicolor"
   },
-  {
-      Sepal_Length: 7.1,
-      Sepal_Width: 3.0,
-      Petal_Length: 5.9,
-      Petal_Width: 2.1,
-      Species: "virginica"
+  {
+      defect_x: 5.5,
+      defect_y: 2.6,
+      line_num: 4,
+      stage_num: 1,
+      defect_image_url: "./",
+      category: "versicolor"
   },
-  {
-      Sepal_Length: 6.3,
-      Sepal_Width: 2.9,
-      Petal_Length: 5.6,
-      Petal_Width: 1.8,
-      Species: "virginica"
+  {
+      defect_x: 6.1,
+      defect_y: 3.0,
+      line_num: 4,
+      stage_num: 1,
+      defect_image_url: "./",
+      category: "versicolor"
   },
-  {
-      Sepal_Length: 6.5,
-      Sepal_Width: 3.0,
-      Petal_Length: 5.8,
-      Petal_Width: 2.2,
-      Species: "virginica"
+  {
+      defect_x: 5.8,
+      defect_y: 2.6,
+      line_num: 4,
+      stage_num: 1,
+      defect_image_url: "./",
+      category: "versicolor"
   },
-  {
-      Sepal_Length: 7.6,
-      Sepal_Width: 3.0,
-      Petal_Length: 6.6,
-      Petal_Width: 2.1,
-      Species: "virginica"
+  {
+      defect_x: 5.0,
+      defect_y: 2.3,
+      line_num: 3,
+      stage_num: 1,
+      defect_image_url: "./",
+      category: "versicolor"
   },
-  {
-      Sepal_Length: 4.9,
-      Sepal_Width: 2.5,
-      Petal_Length: 4.5,
-      Petal_Width: 1.7,
-      Species: "virginica"
+  {
+      defect_x: 5.6,
+      defect_y: 2.7,
+      line_num: 4,
+      stage_num: 1,
+      defect_image_url: "./",
+      category: "versicolor"
   },
-  {
-      Sepal_Length: 7.3,
-      Sepal_Width: 2.9,
-      Petal_Length: 6.3,
-      Petal_Width: 1.8,
-      Species: "virginica"
+  {
+      defect_x: 5.7,
+      defect_y: 3.0,
+      line_num: 4,
+      stage_num: 1,
+      defect_image_url: "./",
+      category: "versicolor"
   },
-  {
-      Sepal_Length: 6.7,
-      Sepal_Width: 2.5,
-      Petal_Length: 5.8,
-      Petal_Width: 1.8,
-      Species: "virginica"
+  {
+      defect_x: 5.7,
+      defect_y: 2.9,
+      line_num: 4,
+      stage_num: 1,
+      defect_image_url: "./",
+      category: "versicolor"
   },
-  {
-      Sepal_Length: 7.2,
-      Sepal_Width: 3.6,
-      Petal_Length: 6.1,
-      Petal_Width: 2.5,
-      Species: "virginica"
+  {
+      defect_x: 6.2,
+      defect_y: 2.9,
+      line_num: 4,
+      stage_num: 1,
+      defect_image_url: "./",
+      category: "versicolor"
   },
-  {
-      Sepal_Length: 6.5,
-      Sepal_Width: 3.2,
-      Petal_Length: 5.1,
-      Petal_Width: 2.0,
-      Species: "virginica"
+  {
+      defect_x: 5.1,
+      defect_y: 2.5,
+      line_num: 3,
+      stage_num: 1,
+      defect_image_url: "./",
+      category: "versicolor"
   },
-  {
-      Sepal_Length: 6.4,
-      Sepal_Width: 2.7,
-      Petal_Length: 5.3,
-      Petal_Width: 1.9,
-      Species: "virginica"
+  {
+      defect_x: 5.7,
+      defect_y: 2.8,
+      line_num: 4,
+      stage_num: 1,
+      defect_image_url: "./",
+      category: "versicolor"
   },
-  {
-      Sepal_Length: 6.8,
-      Sepal_Width: 3.0,
-      Petal_Length: 5.5,
-      Petal_Width: 2.1,
-      Species: "virginica"
+  {
+      defect_x: 6.3,
+      defect_y: 3.3,
+      line_num: 6,
+      stage_num: 2,
+      defect_image_url: "./",
+      category: "virginica"
   },
-  {
-      Sepal_Length: 5.7,
-      Sepal_Width: 2.5,
-      Petal_Length: 5.0,
-      Petal_Width: 2.0,
-      Species: "virginica"
+  {
+      defect_x: 5.8,
+      defect_y: 2.7,
+      line_num: 5,
+      stage_num: 1,
+      defect_image_url: "./",
+      category: "virginica"
   },
-  {
-      Sepal_Length: 5.8,
-      Sepal_Width: 2.8,
-      Petal_Length: 5.1,
-      Petal_Width: 2.4,
-      Species: "virginica"
+  {
+      defect_x: 7.1,
+      defect_y: 3.0,
+      line_num: 5,
+      stage_num: 2,
+      defect_image_url: "./",
+      category: "virginica"
   },
-  {
-      Sepal_Length: 6.4,
-      Sepal_Width: 3.2,
-      Petal_Length: 5.3,
-      Petal_Width: 2.3,
-      Species: "virginica"
+  {
+      defect_x: 6.3,
+      defect_y: 2.9,
+      line_num: 5,
+      stage_num: 1,
+      defect_image_url: "./",
+      category: "virginica"
   },
-  {
-      Sepal_Length: 6.5,
-      Sepal_Width: 3.0,
-      Petal_Length: 5.5,
-      Petal_Width: 1.8,
-      Species: "virginica"
+  {
+      defect_x: 6.5,
+      defect_y: 3.0,
+      line_num: 5,
+      stage_num: 2,
+      defect_image_url: "./",
+      category: "virginica"
   },
-  {
-      Sepal_Length: 7.7,
-      Sepal_Width: 3.8,
-      Petal_Length: 6.7,
-      Petal_Width: 2.2,
-      Species: "virginica"
+  {
+      defect_x: 7.6,
+      defect_y: 3.0,
+      line_num: 6,
+      stage_num: 2,
+      defect_image_url: "./",
+      category: "virginica"
   },
-  {
-      Sepal_Length: 7.7,
-      Sepal_Width: 2.6,
-      Petal_Length: 6.9,
-      Petal_Width: 2.3,
-      Species: "virginica"
+  {
+      defect_x: 4.9,
+      defect_y: 2.5,
+      line_num: 4,
+      stage_num: 1,
+      defect_image_url: "./",
+      category: "virginica"
   },
-  {
-      Sepal_Length: 6.0,
-      Sepal_Width: 2.2,
-      Petal_Length: 5.0,
-      Petal_Width: 1.5,
-      Species: "virginica"
+  {
+      defect_x: 7.3,
+      defect_y: 2.9,
+      line_num: 6,
+      stage_num: 1,
+      defect_image_url: "./",
+      category: "virginica"
   },
-  {
-      Sepal_Length: 6.9,
-      Sepal_Width: 3.2,
-      Petal_Length: 5.7,
-      Petal_Width: 2.3,
-      Species: "virginica"
+  {
+      defect_x: 6.7,
+      defect_y: 2.5,
+      line_num: 5,
+      stage_num: 1,
+      defect_image_url: "./",
+      category: "virginica"
   },
-  {
-      Sepal_Length: 5.6,
-      Sepal_Width: 2.8,
-      Petal_Length: 4.9,
-      Petal_Width: 2.0,
-      Species: "virginica"
+  {
+      defect_x: 7.2,
+      defect_y: 3.6,
+      line_num: 6,
+      stage_num: 2,
+      defect_image_url: "./",
+      category: "virginica"
   },
-  {
-      Sepal_Length: 7.7,
-      Sepal_Width: 2.8,
-      Petal_Length: 6.7,
-      Petal_Width: 2.0,
-      Species: "virginica"
+  {
+      defect_x: 6.5,
+      defect_y: 3.2,
+      line_num: 5,
+      stage_num: 2,
+      defect_image_url: "./",
+      category: "virginica"
   },
-  {
-      Sepal_Length: 6.3,
-      Sepal_Width: 2.7,
-      Petal_Length: 4.9,
-      Petal_Width: 1.8,
-      Species: "virginica"
+  {
+      defect_x: 6.4,
+      defect_y: 2.7,
+      line_num: 5,
+      stage_num: 1,
+      defect_image_url: "./",
+      category: "virginica"
   },
-  {
-      Sepal_Length: 6.7,
-      Sepal_Width: 3.3,
-      Petal_Length: 5.7,
-      Petal_Width: 2.1,
-      Species: "virginica"
+  {
+      defect_x: 6.8,
+      defect_y: 3.0,
+      line_num: 5,
+      stage_num: 2,
+      defect_image_url: "./",
+      category: "virginica"
   },
-  {
-      Sepal_Length: 7.2,
-      Sepal_Width: 3.2,
-      Petal_Length: 6.0,
-      Petal_Width: 1.8,
-      Species: "virginica"
+  {
+      defect_x: 5.7,
+      defect_y: 2.5,
+      line_num: 5,
+      stage_num: 2,
+      defect_image_url: "./",
+      category: "virginica"
   },
-  {
-      Sepal_Length: 6.2,
-      Sepal_Width: 2.8,
-      Petal_Length: 4.8,
-      Petal_Width: 1.8,
-      Species: "virginica"
+  {
+      defect_x: 5.8,
+      defect_y: 2.8,
+      line_num: 5,
+      stage_num: 2,
+      defect_image_url: "./",
+      category: "virginica"
   },
-  {
-      Sepal_Length: 6.1,
-      Sepal_Width: 3.0,
-      Petal_Length: 4.9,
-      Petal_Width: 1.8,
-      Species: "virginica"
+  {
+      defect_x: 6.4,
+      defect_y: 3.2,
+      line_num: 5,
+      stage_num: 2,
+      defect_image_url: "./",
+      category: "virginica"
   },
-  {
-      Sepal_Length: 6.4,
-      Sepal_Width: 2.8,
-      Petal_Length: 5.6,
-      Petal_Width: 2.1,
-      Species: "virginica"
+  {
+      defect_x: 6.5,
+      defect_y: 3.0,
+      line_num: 5,
+      stage_num: 1,
+      defect_image_url: "./",
+      category: "virginica"
   },
-  {
-      Sepal_Length: 7.2,
-      Sepal_Width: 3.0,
-      Petal_Length: 5.8,
-      Petal_Width: 1.6,
-      Species: "virginica"
+  {
+      defect_x: 7.7,
+      defect_y: 3.8,
+      line_num: 6,
+      stage_num: 2,
+      defect_image_url: "./",
+      category: "virginica"
   },
-  {
-      Sepal_Length: 7.4,
-      Sepal_Width: 2.8,
-      Petal_Length: 6.1,
-      Petal_Width: 1.9,
-      Species: "virginica"
+  {
+      defect_x: 7.7,
+      defect_y: 2.6,
+      line_num: 6,
+      stage_num: 2,
+      defect_image_url: "./",
+      category: "virginica"
   },
-  {
-      Sepal_Length: 7.9,
-      Sepal_Width: 3.8,
-      Petal_Length: 6.4,
-      Petal_Width: 2.0,
-      Species: "virginica"
+  {
+      defect_x: 6.0,
+      defect_y: 2.2,
+      line_num: 5,
+      stage_num: 1,
+      defect_image_url: "./",
+      category: "virginica"
   },
-  {
-      Sepal_Length: 6.4,
-      Sepal_Width: 2.8,
-      Petal_Length: 5.6,
-      Petal_Width: 2.2,
-      Species: "virginica"
+  {
+      defect_x: 6.9,
+      defect_y: 3.2,
+      line_num: 5,
+      stage_num: 2,
+      defect_image_url: "./",
+      category: "virginica"
   },
-  {
-      Sepal_Length: 6.3,
-      Sepal_Width: 2.8,
-      Petal_Length: 5.1,
-      Petal_Width: 1.5,
-      Species: "virginica"
+  {
+      defect_x: 5.6,
+      defect_y: 2.8,
+      line_num: 4,
+      stage_num: 2,
+      defect_image_url: "./",
+      category: "virginica"
   },
-  {
-      Sepal_Length: 6.1,
-      Sepal_Width: 2.6,
-      Petal_Length: 5.6,
-      Petal_Width: 1.4,
-      Species: "virginica"
+  {
+      defect_x: 7.7,
+      defect_y: 2.8,
+      line_num: 6,
+      stage_num: 2,
+      defect_image_url: "./",
+      category: "virginica"
   },
-  {
-      Sepal_Length: 7.7,
-      Sepal_Width: 3.0,
-      Petal_Length: 6.1,
-      Petal_Width: 2.3,
-      Species: "virginica"
+  {
+      defect_x: 6.3,
+      defect_y: 2.7,
+      line_num: 4,
+      stage_num: 1,
+      defect_image_url: "./",
+      category: "virginica"
   },
-  {
-      Sepal_Length: 6.3,
-      Sepal_Width: 3.4,
-      Petal_Length: 5.6,
-      Petal_Width: 2.4,
-      Species: "virginica"
+  {
+      defect_x: 6.7,
+      defect_y: 3.3,
+      line_num: 5,
+      stage_num: 2,
+      defect_image_url: "./",
+      category: "virginica"
   },
-  {
-      Sepal_Length: 6.4,
-      Sepal_Width: 3.1,
-      Petal_Length: 5.5,
-      Petal_Width: 1.8,
-      Species: "virginica"
+  {
+      defect_x: 7.2,
+      defect_y: 3.2,
+      line_num: 6,
+      stage_num: 1,
+      defect_image_url: "./",
+      category: "virginica"
   },
-  {
-      Sepal_Length: 6.0,
-      Sepal_Width: 3.0,
-      Petal_Length: 4.8,
-      Petal_Width: 1.8,
-      Species: "virginica"
+  {
+      defect_x: 6.2,
+      defect_y: 2.8,
+      line_num: 4,
+      stage_num: 1,
+      defect_image_url: "./",
+      category: "virginica"
   },
-  {
-      Sepal_Length: 6.9,
-      Sepal_Width: 3.1,
-      Petal_Length: 5.4,
-      Petal_Width: 2.1,
-      Species: "virginica"
+  {
+      defect_x: 6.1,
+      defect_y: 3.0,
+      line_num: 4,
+      stage_num: 1,
+      defect_image_url: "./",
+      category: "virginica"
   },
-  {
-      Sepal_Length: 6.7,
-      Sepal_Width: 3.1,
-      Petal_Length: 5.6,
-      Petal_Width: 2.4,
-      Species: "virginica"
+  {
+      defect_x: 6.4,
+      defect_y: 2.8,
+      line_num: 5,
+      stage_num: 2,
+      defect_image_url: "./",
+      category: "virginica"
   },
-  {
-      Sepal_Length: 6.9,
-      Sepal_Width: 3.1,
-      Petal_Length: 5.1,
-      Petal_Width: 2.3,
-      Species: "virginica"
+  {
+      defect_x: 7.2,
+      defect_y: 3.0,
+      line_num: 5,
+      stage_num: 1,
+      defect_image_url: "./",
+      category: "virginica"
   },
-  {
-      Sepal_Length: 5.8,
-      Sepal_Width: 2.7,
-      Petal_Length: 5.1,
-      Petal_Width: 1.9,
-      Species: "virginica"
+  {
+      defect_x: 7.4,
+      defect_y: 2.8,
+      line_num: 6,
+      stage_num: 1,
+      defect_image_url: "./",
+      category: "virginica"
   },
-  {
-      Sepal_Length: 6.8,
-      Sepal_Width: 3.2,
-      Petal_Length: 5.9,
-      Petal_Width: 2.3,
-      Species: "virginica"
+  {
+      defect_x: 7.9,
+      defect_y: 3.8,
+      line_num: 6,
+      stage_num: 2,
+      defect_image_url: "./",
+      category: "virginica"
   },
-  {
-      Sepal_Length: 6.7,
-      Sepal_Width: 3.3,
-      Petal_Length: 5.7,
-      Petal_Width: 2.5,
-      Species: "virginica"
+  {
+      defect_x: 6.4,
+      defect_y: 2.8,
+      line_num: 5,
+      stage_num: 2,
+      defect_image_url: "./",
+      category: "virginica"
   },
-  {
-      Sepal_Length: 6.7,
-      Sepal_Width: 3.0,
-      Petal_Length: 5.2,
-      Petal_Width: 2.3,
-      Species: "virginica"
+  {
+      defect_x: 6.3,
+      defect_y: 2.8,
+      line_num: 5,
+      stage_num: 1,
+      defect_image_url: "./",
+      category: "virginica"
   },
-  {
-      Sepal_Length: 6.3,
-      Sepal_Width: 2.5,
-      Petal_Length: 5.0,
-      Petal_Width: 1.9,
-      Species: "virginica"
+  {
+      defect_x: 6.1,
+      defect_y: 2.6,
+      line_num: 5,
+      stage_num: 1,
+      defect_image_url: "./",
+      category: "virginica"
   },
-  {
-      Sepal_Length: 6.5,
-      Sepal_Width: 3.0,
-      Petal_Length: 5.2,
-      Petal_Width: 2.0,
-      Species: "virginica"
+  {
+      defect_x: 7.7,
+      defect_y: 3.0,
+      line_num: 6,
+      stage_num: 2,
+      defect_image_url: "./",
+      category: "virginica"
   },
-  {
-      Sepal_Length: 6.2,
-      Sepal_Width: 3.4,
-      Petal_Length: 5.4,
-      Petal_Width: 2.3,
-      Species: "virginica"
+  {
+      defect_x: 6.3,
+      defect_y: 3.4,
+      line_num: 5,
+      stage_num: 2,
+      defect_image_url: "./",
+      category: "virginica"
   },
-  {
-      Sepal_Length: 5.9,
-      Sepal_Width: 3.0,
-      Petal_Length: 5.1,
-      Petal_Width: 1.8,
-      Species: "virginica"
+  {
+      defect_x: 6.4,
+      defect_y: 3.1,
+      line_num: 5,
+      stage_num: 1,
+      defect_image_url: "./",
+      category: "virginica"
+  },
+  {
+      defect_x: 6.0,
+      defect_y: 3.0,
+      line_num: 4,
+      stage_num: 1,
+      defect_image_url: "./",
+      category: "virginica"
+  },
+  {
+      defect_x: 6.9,
+      defect_y: 3.1,
+      line_num: 5,
+      stage_num: 2,
+      defect_image_url: "./",
+      category: "virginica"
+  },
+  {
+      defect_x: 6.7,
+      defect_y: 3.1,
+      line_num: 5,
+      stage_num: 2,
+      defect_image_url: "./",
+      category: "virginica"
+  },
+  {
+      defect_x: 6.9,
+      defect_y: 3.1,
+      line_num: 5,
+      stage_num: 2,
+      defect_image_url: "./",
+      category: "virginica"
+  },
+  {
+      defect_x: 5.8,
+      defect_y: 2.7,
+      line_num: 5,
+      stage_num: 1,
+      defect_image_url: "./",
+      category: "virginica"
+  },
+  {
+      defect_x: 6.8,
+      defect_y: 3.2,
+      line_num: 5,
+      stage_num: 2,
+      defect_image_url: "./",
+      category: "virginica"
+  },
+  {
+      defect_x: 6.7,
+      defect_y: 3.3,
+      line_num: 5,
+      stage_num: 2,
+      defect_image_url: "./",
+      category: "virginica"
+  },
+  {
+      defect_x: 6.7,
+      defect_y: 3.0,
+      line_num: 5,
+      stage_num: 2,
+      defect_image_url: "./",
+      category: "virginica"
+  },
+  {
+      defect_x: 6.3,
+      defect_y: 2.5,
+      line_num: 5,
+      stage_num: 1,
+      defect_image_url: "./",
+      category: "virginica"
+  },
+  {
+      defect_x: 6.5,
+      defect_y: 3.0,
+      line_num: 5,
+      stage_num: 2,
+      defect_image_url: "./",
+      category: "virginica"
+  },
+  {
+      defect_x: 6.2,
+      defect_y: 3.4,
+      line_num: 5,
+      stage_num: 2,
+      defect_image_url: "./",
+      category: "virginica"
+  },
+  {
+      defect_x: 5.9,
+      defect_y: 3.0,
+      line_num: 5,
+      stage_num: 1,
+      defect_image_url: "./",
+      category: "virginica"
   }
 ];
 
@@ -1075,7 +1225,7 @@ const data = [
 //     .domain([
 //         0,
 //         d3.max(data, function (d) {
-//             return d.Sepal_Length;
+//             return d.defect_x;
 //         })
 //     ])
 //     .range([0, width]);
@@ -1134,17 +1284,17 @@ const data = [
 //     .enter()
 //     .append("circle")
 //     .attr("class", function (d) {
-//         return "circle " + d.Species;
+//         return "circle " + d.category;
 //     })
 //     .attr("cx", function (d) {
-//         return x(d.Sepal_Length);
+//         return x(d.defect_x);
 //     })
 //     .attr("cy", function (d) {
 //         return y(d.Petal_Length);
 //     })
 //     .attr("r", 8)
 //     .style("fill", function (d) {
-//         return color(d.Species);
+//         return color(d.category);
 //     })
 //     .style("opacity", 0.5);
 
@@ -1191,7 +1341,7 @@ const data = [
 //     scatter
 //         .selectAll("circle")
 //         .attr("cx", function (d) {
-//             return newX(d.Sepal_Length);
+//             return newX(d.defect_x);
 //         })
 //         .attr("cy", function (d) {
 //             return newY(d.Petal_Length);
@@ -1200,7 +1350,7 @@ const data = [
 
 // ////////////////////////////////////////
 // var highlight = function (d) {
-//     selected_specie = d.Species;
+//     selected_specie = d.category;
 
 //     d3.selectAll("circle")
 //         .transition()
@@ -1247,9 +1397,13 @@ const data = [
 // });
 
 //////////////////////////////////
+// var dataColumnName = ['defect_x', "defect_y", "category", "defect_image_url", "line_num", "stage_num"] 
+
+
+
 var margin = { top: 10, right: 30, bottom: 30, left: 60 },
-  width = 460 - margin.left - margin.right,
-  height = 400 - margin.top - margin.bottom;
+  width = 660 - margin.left - margin.right,
+  height = 500 - margin.top - margin.bottom;
 
 var svg = d3
   .select("#defect_map")
@@ -1287,7 +1441,7 @@ var color = d3
 
 //마우스 오버
 var highlight = function (d) {
-  selected_specie = d.Species;
+  selected_specie = d.category;
 
   d3.selectAll(".dot") //
       .transition()
@@ -1299,6 +1453,7 @@ var highlight = function (d) {
       .duration(200)
       .style("fill", color(selected_specie))
       .attr("r", 7);
+
 };
 
 //마우스 아웃
@@ -1316,17 +1471,17 @@ svg.append("g")
   .enter()
   .append("circle")
   .attr("class", function (d) {
-      return "dot " + d.Species;
+      return "dot " + d.category;
   })
   .attr("cx", function (d) {
-      return x(d.Sepal_Length);
+      return x(d.defect_x);
   })
   .attr("cy", function (d) {
-      return y(d.Petal_Length);
+      return y(d.defect_y);
   })
   .attr("r", 5)
   .style("fill", function (d) {
-      return color(d.Species);
+      return color(d.category);
   })
   .on("mouseover", highlight)
   .on("mouseleave", doNotHighlight);
@@ -1347,8 +1502,64 @@ svg.selectAll("circle")
   })
   .duration(2000)
   .attr("cx", function (d) {
-      return x(d.Sepal_Length);
+      return x(d.defect_x);
   })
   .attr("cy", function (d) {
-      return y(d.Petal_Length);
+      return y(d.defect_y);
   });
+
+
+
+var dummyData = [
+  {
+    machine_num : 001, 
+    line_num : 1
+  },
+  {
+    machine_num : 002, 
+    line_num : 1
+  },
+  {
+    machine_num : 003, 
+    line_num : 1
+  },
+  {
+    machine_num : 001, 
+    line_num : 4
+  },
+  {
+    machine_num : 001, 
+    line_num : 5
+  },
+  {
+    machine_num : 001, 
+    line_num : 6
+  },
+  {
+    machine_num : 001, 
+    line_num : 7
+  },
+]
+
+
+
+$(function () {
+  $("#onfilter").on("click", function() {
+    $("#top-filter").append("<label class=" + "label_test " + "for=" + "col1-select" + ">")
+    $(".label_test").append("설비호기")
+    $(".label_test").append("<select class=" + "select_test" + ">")
+    $(".select_test").append("<option class=" + "1 " +"value=" + "1" + ">")
+    $(".1").append("1번")
+    $(".select_test").append("<option class=" + "2 " +"value=" + "2" + ">")
+    $(".2").append("2번")
+    $(".select_test").append("<option class=" + "3 " +"value=" + "3" + ">")
+    $(".3").append("3번")
+    $(".select_test").append("<option class=" + "4 " +"value=" + "4" + ">")
+    $(".4").append("4번")
+    $(".select_test").append("<option class=" + "5 " +"value=" + "5" + ">")
+    $(".5").append("5번")
+    $(".select_test").append("<option class=" + "6 " +"value=" + "6" + ">")
+    $(".6").append("6번")
+  })
+
+})
