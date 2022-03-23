@@ -37,8 +37,11 @@
         ]
     },
     "files": [
-        "index.html",
-        "main.css",
+        "DefectMap.html",
+        "DefectMap.css",
+        "DefectMap.js",
+        "./Common/d3.min.v4.js",
+        "./Common/jquery-3.6.0.min.js",
         "main.js"
     ]
 }
