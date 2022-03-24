@@ -1,6 +1,5 @@
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
-   License: none (public domain)
    reset CSS
    */
 
@@ -111,18 +110,15 @@
    }
    ol,
    ul {
-       list-style: none;
    }
    blockquote,
    q {
-       quotes: none;
    }
    blockquote:before,
    blockquote:after,
    q:before,
    q:after {
        content: "";
-       content: none;
    }
    table {
        border-collapse: collapse;
@@ -135,22 +131,31 @@
        overflow: scroll;
        min-width: 1000px;
    }
-   .ly-wrap {
+   .ly-wrap-defectMap {
        display: grid;
        grid-template-columns: repeat(8, 1fr);
        grid-gap: 10px;
        grid-auto-rows: minmax(50px, auto);
    }
    .ly-top {
-       border: 1px solid black;
        grid-column: 1/10;
        grid-row: 1;
-       display: flex;
-       justify-content: center;
-       padding: 20px;
+       padding: 10px;
    }
    .top-filter {
+       border: 1px solid black;
+       width: calc(100% - 3px);
+       justify-content: center;
        display: flex;
+       text-align: center;
+       gap: 5px;
+       padding: 10px 0;
+   }
+   .top-filter label {
+       display: block;
+       background-color: cornflowerblue;
+       padding: 5px 0;
+       /* border: 1px solid red; */
    }
    .ly-middle {
        height: auto;
@@ -161,14 +166,14 @@
        grid-gap: 20px;
        grid-auto-rows: minmax(50px, auto);
    }
-   .ly-middle-l {
+   .ly-wrap-defectMap .ly-middle-l {
        grid-column: 1/9;
        grid-row: 1/8;
        border: 1px solid gray;
        border-radius: 5px;
        /* min-width: 550px; */
    }
-   .ly-middle-r {
+   .ly-wrap-defectMap .ly-middle-r {
        grid-column: 9/13;
        grid-row: 1/8;
        border: 1px solid gray;
@@ -187,17 +192,23 @@
        padding: 5px;
        line-height: 24px;
    }
-   .image-container {
+   .ly-wrap-defectMap .image-container {
        padding: 10px 0;
    }
-   .image-main {
+   .ly-wrap-defectMap .image-label {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       padding: 10px;
+   }
+   .ly-wrap-defectMap .image-main {
        padding-top: 20px;
        display: flex;
        align-items: center;
        justify-content: center;
    }
    
-   .image-detail {
+   .ly-wrap-defectMap .image-detail {
        width: auto;
        /* display: flex; */
        /* align-items: center; */
@@ -215,10 +226,103 @@
        gap: 5px;
    }
    
-   .image-label {
-       display: flex;
-       justify-content: space-between;
-       align-items: center;
-       padding: 10px;
+   .title-comment {
+       padding-top: 10px;
+   }
+   .pivot-chart {
+       margin-top: 15px;
    }
    
+   .pivot-container {
+       width: 100%;
+   }
+   
+   .pivot-xAxis {
+       width: 100%;
+   }
+   .pivot-xAxis-label {
+       display: flex;
+       text-align: center;
+   }
+   
+   .pivot-xAxis-label-zero {
+       visibility: hidden;
+       background-color: aquamarine;
+       border: 1px solid black;
+       min-width: 50px;
+       padding: 10px 0;
+       margin-right: 5px;
+   }
+   .pivot-xAxis-label-one {
+       min-width: calc((100% - 65px) / 2);
+       background-color: aquamarine;
+       border: 1px solid black;
+       padding: 10px 0;
+       margin-right: 5px;
+   }
+   .pivot-xAxis-label-two {
+       min-width: calc((100% - 65px) / 2);
+       background-color: bisque;
+       border: 1px solid black;
+       padding: 10px 0;
+   }
+   
+   .pivot-yAxis {
+       display: flex;
+       margin-top: 5px;
+   }
+   .pivot-yAxis-label {
+       text-align: center;
+   }
+   .pivot-yAxis-label-one {
+       background-color: aquamarine;
+       border: 1px solid black;
+       min-width: 50px;
+       height: 300px;
+       line-height: 300px;
+   }
+   .pivot-yAxis-label-two {
+       background-color: bisque;
+       border: 1px solid black;
+       min-width: 50px;
+       margin-top: 5px;
+       height: 300px;
+       line-height: 300px;
+   }
+   
+   .pivot-content {
+   }
+   .pivot-content-top {
+       display: flex;
+   }
+   .pivot-content-down {
+       margin-top: 5px;
+       display: flex;
+   }
+   
+   .pivot-content-one {
+       border: 1px solid black;
+       margin-left: 5px;
+       width: calc((100% - 15px) / 2);
+       max-height: 300px;
+       overflow: scroll;
+   }
+   /* .pivot-content-one::-webkit-scrollbar {
+       display: none;
+   } */
+   
+   .pivot-content-two {
+       border: 1px solid black;
+       margin-left: 5px;
+       width: calc((100% - 15px) / 2);
+       max-height: 300px;
+       overflow: scroll;
+   }
+   /* .pivot-content-two::-webkit-scrollbar {
+       display: none;
+   } */
+   
+   img {
+       width: calc((100% - 7px) / 2);
+       height: calc(100% - 7px);
+   }

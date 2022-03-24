@@ -6,34 +6,14 @@
         <title>불량맵분석</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <!-- <link rel="stylesheet" type="text/css" media="all" href="DefectMap.DefectMap.css" /> -->
-        <link rel="stylesheet" type="text/css" media="all" href="DefectMap.css" />
+        <link rel="stylesheet" type="text/css" media="all" href="Common/main.css" />
     </head>
     <body>
         <div id="mod-container">
-            <div class="ly-wrap">
+            <div class="ly-wrap-defectMap">
                 <div class="ly-top">
                     <div id="top-filter" class="top-filter">
-                      <button id="onfilter" type="button">필터만들기</button>
-                        <label for="col1-select">
-                            PJT(단일)
-                            <select>
-                                <option value="all">ALL</option>
-                                <option value="1">1</option>
-                                <option value="1">2</option>
-                                <option value="1">3</option>
-                                <option value="1">4</option>
-                            </select>
-                        </label>
-                        <label for="col2-select">
-                            설비호기
-                            <select>
-                                <option value="all">ALL</option>
-                                <option value="1">1</option>
-                                <option value="1">2</option>
-                                <option value="1">3</option>
-                                <option value="1">4</option>
-                            </select>
-                        </label>
+                        <button id="onFilter" type="button">피봇테이블</button>
                     </div>
                 </div>
                 <div class="ly-middle">
@@ -102,6 +82,7 @@
         <script src="Common/jquery-3.6.0.min.js"></script>
         <script src="Common/d3.min.v4.js"></script>
         <script src="DefectMap.js"></script>
+        <!-- <script src="page.js"></script> -->
         <script src="main.js"></script>
         <!-- <script id="spotfire-loader">
             var Spotfire = (function (e) {
